@@ -31,6 +31,14 @@
     <module name="TreeWalker">
         <property name="fileExtensions" value="java"/>
 
+        <module name="ImportOrder">
+            <property name="groups" value="*,javax,java"/>
+            <property name="ordered" value="true"/>
+            <property name="separated" value="false"/>
+            <property name="option" value="bottom"/>
+            <property name="sortStaticImportsAlphabetically" value="true"/>
+        </module>
+
         <!-- Checks for star imports -->
         <module name="AvoidStarImport">
             <property name="allowStaticMemberImports" value="true"/>
